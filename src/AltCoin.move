@@ -1,7 +1,7 @@
 module AltCoin::AltCoin {
     use std::signer;
     use BasicCoin::BasicCoin;
-update
+updateupdate
     struct AltCoin has drop {}
 
     public fun setup_and_mint(account: &signer, amount: u64) {
