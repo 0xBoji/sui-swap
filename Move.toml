@@ -7,7 +7,7 @@ std = "0x1"
 SuiSwap = "0xC5"
 BasicCoin = "0xBC"
 GoldCoin = "0x9C"
-SilverCoin = "0x5C"
+AltCoin = "0x5C"
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
