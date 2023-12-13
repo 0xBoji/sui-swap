@@ -3,6 +3,10 @@ module SuiSwap::SuiSwap {
     use std::error;
     use BasicCoin::BasicCoin;
     use SuiSwap::PoolToken;
+    use sui::object::{UID,Self};
+    use sui::tx_context::{TxContext,Self};
+    use sui::transfer;
+
 
     const ESuiSwap_ADDRESS: u64 = 0;
     const EPOOL: u64 = 0;

@@ -1,7 +1,10 @@
 module CoinSwap::PoolToken {
     use std::signer;
     use BasicCoin::BasicCoin;
-
+    use sui::object::{UID,Self};
+    use sui::tx_context::{TxContext,Self};
+    use sui::transfer;
+    
     struct PoolToken<phantom CoinType1, phantom CoinType2> has drop {}
 
     public fun setup_and_mint<CoinType1, CoinType2>(account: &signer, amount: u64) {
